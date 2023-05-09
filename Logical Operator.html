@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logical Operator</title>
+  <script>
+    
+    function tampilkanHasil() {
+      var a = true;
+      var b = false;
+
+      var hasil1 = a && b;
+      var hasil2 = a || b;
+      var hasil3 = !a;
+      var hasil4 = !b;
+
+      var pesan = "a = " + a + "<br>";
+      pesan += "b = " + b + "<br>";
+      pesan += "AND (&&): " + hasil1 + "<br>";
+      pesan += "OR (||): " + hasil2 + "<br>";
+      pesan += "NOT (!) a: " + hasil3 + "<br>";
+      pesan += "NOT (!) b: " + hasil4 + "<br>";
+
+      document.getElementById("hasil").innerHTML = pesan;
+    }
+  </script>
+</head>
+<body>
+  <h1>Logical Operator</h1>
+  <button onclick="tampilkanHasil()">Klik untuk Menampilkan Hasil</button>
+  <p id="hasil"></p>
+</body>
+</html>
