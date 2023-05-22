@@ -1,0 +1,106 @@
+
+
+  main{
+    background: #00c2f7; 
+  }
+h1{
+    font-family: sans-serif;
+  }
+   
+  .table {
+    font-family: sans-serif;
+    color: #444;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #f2f5f7;
+    background-color : white
+}
+ 
+.table tr th{
+    background: #90C8AC;
+    color: #fff;
+    font-weight: normal;
+}
+ 
+.table, th, td {
+    padding: 10px 20px;
+    text-align: left;
+}
+  
+ 
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+  .input {
+    margin-top :5px ;
+    border : none; 
+    border-radius : 5px;
+    display: block; 
+    padding : 15px;
+    width : 250px
+  }
+  .input_div {
+    margin-bottom: 10px
+  }
+  .input_select{
+    margin-top :5px ;
+    border : none; 
+    width : 280px ;
+    border-radius : 3px;
+    padding : 15px;
+    display: block;
+  }
+  .container{
+    padding :10px;  
+    display :flex;
+    justify-content: center;
+    align-items :center;
+   
+  }  
+  .btn-group { 
+    width : 100%; 
+  }
+  .btn {
+    padding : 10px 5px  ;
+    border-radius : 5px;
+    border : none ; 
+    color : #fff;
+    cursor : pointer;
+    transition-duration:  0.3s;
+    
+    
+  }
+  .btn-reset {
+    background : gray;
+    width: 18%;
+  }
+  .btn-reset:hover{
+    background : white;
+    color : black;
+  }
+  .btn-success:hover{
+    background : #73A9AD; 
+  }
+  .btn-success {
+    background : #90C8AC;
+    width: 80%;
+    text-transform : uppercase;
+  }
+  .title {
+    font-size : 24px;
+    text-align : center
+  }
+  .navbar {
+    padding :10px; 
+    color: white; 
+    display : flex;
+    align-items : center;
+    justify-content :space-between; 
+  }
+  .profile a {
+    cursor : pointer;
+    font-size : 24px;
+    color : white;
+    decoration:none
+  }

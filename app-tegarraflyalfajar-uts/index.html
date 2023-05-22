@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS - Pemrograman 2</title>
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <main> 
+        <div class="navbar"> 
+            <div class="profile">
+                <a href="profile.html">
+                    <i class="bi bi-person-circle"></i>
+                </a>
+            </div>
+            <h1 class="title">input nilai mahasiswa</h1>
+            <div class=""></div>
+        </div> 
+        <div class="container">
+            <form  id="form">
+                <div class="input_div">  
+                    <input type="text" class="input" name="nama" id="nama" required placeholder="Masukan Nama">
+                </div>
+                <div class="input_div">  
+                    <input type="number" class="input" name="nim" id="nim" required placeholder="Masukan NIM">
+                </div> 
+                <div class="input_div"> 
+                    <select name="matkul"  class="input_select" id="matkul" required>
+                        <option disabled selected  > </option>
+                        <option value="a">Bahasa Indonesia</option>
+                        <option value="b">PPKN</option>
+                        <option value="c">Sistem Oprasi</option>
+                        <option value="d">Kalkulus</option>
+                        <option value="e">Arsitektur Komputer</option>
+                        <option value="f">Pemrograman Komputer</option>
+                        <option value="g">Aljabar</option>
+                        <option value="h">Diskrit</option>
+                        <option value="i">Bahasa Inggris</option>
+                    </select>
+                </div>
+                <div class="input_div">  
+                    <input name="nilai" type="number" class="input" id="nilai" min="0" max="100" required placeholder="Masukan Nilai" >
+                </div> 
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success" onclick="save()">Submit</button>
+                    <button type="reset" class="btn btn-reset">Reset</button>
+                </div>
+            </form>
+        </div> 
+    
+    
+    <table class="table table-dark table-striped" id="myTable">
+        <thead>
+            <tr>
+                <th scope="col">Nama</th>
+                <th scope="col">Nim</th>
+                <th scope="col">Matkul</th>
+                <th scope="col">Nilai</th>
+                <th scope="col">Indexs</th>
+                <th scope="col"> </th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+</main>
+    <script> 
+        myArr = []
+        
+        function data() {
+            document.querySelector("#myTable tbody").innerHTML = myArr.map((user,i) => 
+            `
+            
+            <tr>
+            <td>${user[0]}</td>
+            <td>${user[1]}</td>
+            <td>${user[2]}</td>
+            <td>${user[3]}</td>
+            <td>${user[4]}</td>
+            <td onclick="hapus(${i})"><i class="bi bi-trash"></i> </td>
+        </tr>`).join('')
+        }
+ 
+    function save( ){  
+        var nama = document.getElementById("nama");
+        var nim = document.getElementById("nim");
+        var matkul = document.getElementById("matkul");
+        var nilai = document.getElementById("nilai");    
+        if (nilai.value >= 85){
+            nilaiVal = 'A';
+            indexs = '4.00';
+        }
+        else if (nilai.value >= 79){
+            nilaiVal = 'A-';
+            indexs = '3.67';
+        }
+        else if (nilai.value >= 74){
+            nilaiVal = 'B+';
+            indexs = '3.33';
+        }
+        else if (nilai.value >= 69){
+            nilaiVal = 'B';
+            indexs = '3.00';
+        }
+        else if (nilai.value >= 64){
+            nilaiVal = 'B-'
+            indexs = '2.67';;
+        }
+        else if (nilai.value >= 59){
+            nilaiVal = 'C+'
+            indexs = '2.33';;
+        }
+        else if (nilai.value >= 54){
+            nilaiVal = 'C';
+            indexs = '2.00';
+        } 
+        else if (nilai.value >= 41){
+            nilaiVal = 'D';
+            indexs = '1.00';
+        }
+        else if (nilai.value <= 40){
+            nilaiVal = 'E';
+            indexs = '0.00';
+        } 
+        
+        myArr.push([nama.value,nim.value ,matkul.value ,nilaiVal,indexs]);
+        data()
+      }
+      function hapus(i) {
+        Arr = myArr.filter(function(item,index) {
+            return index !== i ;
+          })
+        myArr = Arr 
+        data()
+      }
+      
+    </script>
+</body>
+</html>
