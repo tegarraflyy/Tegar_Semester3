@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MATH GAME</title>
+	<link rel="stylesheet" href="/uas_tegar/css/index.css">
+
+
+</head>
+		<body>
+			
+			<div class="game-logo">
+				
+				<img class="logo-polibang" src="/uas_tegar/img/LogoPolibang.png" alt="Game Logo">
+				
+				<img class="logo-rpl" src="/uas_tegar/img/LogoRpl.png" alt="Polibang & RPL Logo">
+				
+				<img class="logo-game" src="/uas_tegar/img/Logogame.png" alt="Game logo">
+			</div>
+			<div class="isi">
+				<div class="game-tagline">
+					
+					<h1>MATH GAME</h1>
+				</div>
+				<div class="game-description">
+					
+					<p>Tentang Game ini :</p>
+						<p>Game soal tentang edukasi matematika dasar</p>
+				</div>
+			</div>
+				
+				<label class ="player-name">Player Name:</label>
+				<input class="text" id="player-name">
+				<script>
+				function prevslide() {
+					var playerNameInput = document.getElementById('player-name');
+					var playerName = playerNameInput.value;
+				  
+					
+					localStorage.setItem('playerName', playerName);
+				  }
+				</script>
+				  
+
+			<div class="masuk">
+				<a href="level1.html">
+					<button class="slider-button slinder-button-prev" onclick="prevslide()">play</button>
+				</a>
+			</div>
+		<div class="button-profil">
+			<a href="Profil.html">
+				<button class="button-profil button-profil" onclick="prevslide()">Profil</button>
+			</a>
+		</div>
+	
+	
+	<div id="game-area" style="display: none;">
+		
+	</div>
+	
+		<div class="contact-info">My Sosmed : <br></br>
+			<a href="https://www.instagram.com/tegarraplyy/?igshid=ZGUzMzM3NWJiOQ%3D%3D" target="_blank">
+				<img class="IG" src="IG.png" alt="instagram" width="30px">
+			</a>
+			<a href="https://web.facebook.com/tegarrafly.tegarrafly.1?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank">
+				<img class="FB" src="FB.png" alt="facebook" width="30px">
+			</a>
+			<a href="https://wa.me/6282133172064" target="_blank">
+				<img class="TWT" src="WA.png" alt="whatsapp" width="30px">
+			</a>
+		</div>
+		<div class="copyright">
+            &copy : tegarrafly 2023 - <script>document.write(new Date().getFullYear())</script>
+	</div>
+</body>
+</html>

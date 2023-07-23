@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH GAME</title>
+    <link rel="stylesheet" href="/uas_tegar/css/level.css">
+    <h2>Player Name: <span id="player-name-display"></span></h2>
+</head>
+<body>
+    <h1>KERJAKAN SOAL BERIKUT</h1>
+    <h3>LEVEL 4 (PENJUMLAHAN, PENGURANGAN, PERKALIAN, DAN PEMBAGIAN)</h3>
+    <div class="MulaiSoal">
+        <button onclick="startQuiz()">Mulai Mengerjakan</button>
+    </div>
+
+  <div id="quiz-container" style="display: none;">
+    <p id="question"></p>
+    <label>
+      <input type="radio" name="options" value="A">
+      <span id="optionA"></span>
+    </label>
+    <label>
+      <input type="radio" name="options" value="B">
+      <span id="optionB"></span>
+    </label>
+    <label>
+      <input type="radio" name="options" value="C">
+      <span id="optionC"></span>
+    </label>
+    <label>
+      <input type="radio" name="options" value="D">
+      <span id="optionD"></span>
+    </label>
+    <br>
+    
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="result"></p>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Kuis Selesai!</h2>
+      <p>Skor Anda: <span id="final-score"></span> dari <span id="total-questions"></span></p>
+      <button onclick="restartQuiz()">Ulangi</button>
+      <button onclick="continueQuiz()">Kembali ke halaman utama</button>
+    </div>
+  </div>
+
+    <div class="main">
+        <a href="index.html" class="back">
+            Back
+        </a>
+    </div>  
+
+    <div class="main">
+        <a href="index.html" class="back">
+            Back
+        </a>
+    </div>
+
+    <!-- Skrip JavaScript dipindahkan ke bagian bawah halaman -->
+    <script>
+        // Ambil nilai playerName dari local storage
+        var playerName = localStorage.getItem('playerName');
+
+        // Tampilkan nilai playerName di halaman
+        var playerNameElement = document.getElementById('player-name-display');
+        playerNameElement.textContent = playerName;
+    </script>
+
+    <!-- Memanggil skrip JavaScript dari file eksternal -->
+    <script src="level4.js"></script>
+</body>
+</html>

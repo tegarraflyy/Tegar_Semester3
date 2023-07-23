@@ -1,0 +1,132 @@
+body {
+	margin: 0;
+	background-color: #701252; 
+	background-image: radial-gradient(ellipse at top, #335476 0.0%, #31506e 11.1%, #304b67 22.2%, #2f4760 33.3%, #2d4359 44.4%, #2c3f51 55.6%, #2a3a4a 66.7%, #293643 77.8%, #28323d 88.9%, #262e36 100.0%);
+	height: 100vh;
+	overflow: hidden;
+	font-family: monospace;
+	font-weight: bold;
+	letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.75);
+  /* background-image:url(giphy.gif) ; */
+  background-image: url(giphy.gif) ;
+  background-size: 100%;
+}
+
+.logo-polibang , .logo-rpl {
+  display: flex;
+  margin-left: auto;
+  max-width: 75px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+}
+
+.logo-game {
+  display: flex;
+  margin-left: auto;
+  max-width: 100px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 80px;
+  width: 70px;
+}
+  /* CSS untuk tagline game */
+  .isi .game-tagline{
+    color: #b9bdb9;
+    font-size: 30px;
+    text-align: center;
+    clear: both;
+    margin-bottom: 50px;
+  }
+  
+  
+  /* CSS untuk input nama pemain */
+  .player-name {
+    margin: 25px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .text {
+    margin: 5px auto; /* Menggunakan margin: 10px auto; untuk pemusatannya */
+    display: flex;
+    justify-content: center; /* Menggunakan justify-content: center; untuk pemusatan horizontal */
+    align-items: center; /* Menggunakan align-items: center; untuk pemusatan vertikal */
+    padding: 5px;
+    background-color: #ffffff;
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* CSS untuk tombol Start Game */
+  .slider-button {
+      margin: 20px auto; /* Menggunakan margin: 10px auto; untuk pemusatannya */
+      display: flex;
+      justify-content: center; /* Menggunakan justify-content: center; untuk pemusatan horizontal */
+      align-items: center; /* Menggunakan align-items: center; untuk pemusatan vertikal */
+      /* padding: 1px; */
+      background-color: #4c69a472;
+      width: 80px;
+      height: 40px;
+      font-size: 17px;
+      border-radius: 20px;
+      color: #ffffff;
+  }
+  .slider-button:hover{
+    background-color: rgb(45, 28, 61);
+    color: #ffffff;
+  }
+   
+  /* CSS untuk deskripsi game */
+  .game-description p {
+    margin: 10px auto; /* Menggunakan margin: 10px auto; untuk pemusatannya */
+      display: flex;
+      justify-content: center; /* Menggunakan justify-content: center; untuk pemusatan horizontal */
+      align-items: center; /* Menggunakan align-items: center; untuk pemusatan vertikal */
+    color: #ffffff;
+    text-align: inherit;
+  }
+  
+  .button-profil {
+    margin: 205px auto; /* Menggunakan margin: 10px auto; untuk pemusatannya */
+    display: flex;
+    justify-content: center; /* Menggunakan justify-content: center; untuk pemusatan horizontal */
+    align-items: center; /* Menggunakan align-items: center; untuk pemusatan vertikal */
+    /* padding: 1px; */
+    background-color: #4c69a472;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+  .button-profil:hover{
+    background-color: rgb(45, 28, 61);
+    color: #ffffff;
+  }
+  
+  .contact-info {
+    color: #ffffff;
+    font-size: 14px;
+    position: fixed; /* Menggunakan position: fixed; agar elemen tetap pada posisi yang ditentukan */
+    bottom: 0; /* Menggunakan bottom: 0; agar elemen berada di bagian bawah */
+    left: 0; /* Menggunakan left: 0; agar elemen berada di bagian kanan */
+    margin: 10px; /* Mengatur margin untuk memberikan jarak dari tepi */
+    text-align: left;
+  }
+  .copyright {
+    color: #ffffff;
+    font-size: 14px;
+    position: fixed; /* Menggunakan position: fixed; agar elemen tetap pada posisi yang ditentukan */
+    bottom: 0; /* Menggunakan bottom: 0; agar elemen berada di bagian bawah */
+    right: 0; /* Menggunakan right: 0; agar elemen berada di bagian kanan */
+    margin: 10px; /* Mengatur margin untuk memberikan jarak dari tepi */
+    text-align: left;
+  }
