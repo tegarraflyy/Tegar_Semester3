@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> INI SAYA </title>
+    </head>
+<body>
+    <script>
+        const biodata = {
+  name: 'Attabik',
+  age: 18,
+  address: 'Jepara Utara',
+  email: 'attabiknattik2004@gmail.com',
+  hobbies: ['Makan Indomie', 'Nyuci Motor', 'Main play Station']
+};
+
+const prodi = {
+  major: 'Rekayasa Perangkat Lunak',
+  university: 'Universitas Nasional Jepara'
+};
+
+const profile = {
+  ...biodata,
+  ...prodi
+};
+
+document.write(`<h1>Profil Saya</h1>
+  <p><strong>Nama:</strong> ${profile.name}</p>
+  <p><strong>Umur:</strong> ${profile.age}</p>
+  <p><strong>Alamat:</strong> ${profile.address}</p>
+  <p><strong>Email:</strong> ${profile.email}</p>
+  <p><strong>Hobi:</strong> ${profile.hobbies.join(', ')}</p>
+  <p><strong>Jurusan:</strong> ${profile.major}</p>
+  <p><strong>Universitas:</strong> ${profile.university}</p>
+`);
+
+    </script>
+</body>
+
+</html>

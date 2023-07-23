@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Handphone Jaya Celuller</title>
+</head>
+<body>
+    <script> 
+     let hargaHp = {
+        Samsung: 5000000,
+        iPhone: 10000000,
+        Xiaomi: 3000000,
+        Oppo: 4000000,
+        };
+
+        let totalHarga = 0;
+        let discount = 0;
+        let member = false;
+        
+       
+        alert("Selamat Datang Di toko Handphone Jaya celuller");
+        alert("Tidak Melayni Pamgkas Rambut")
+
+        let pilihan = prompt(
+        "Pilih merk HP yang ingin dibeli \n 1. Samsung \n 2. iPhone \n 3. Xiaomi \n 4. Oppo"
+        );
+
+        switch (pilihan) {
+        case "1":
+            totalHarga = hargaHp.Samsung;
+            break;
+        case "2":
+            totalHarga = hargaHp.iPhone;
+            break;
+        case "3":
+            totalHarga = hargaHp.Xiaomi;
+            break;
+        case "4":
+            totalHarga = hargaHp.Oppo;
+            break;
+        default:
+            alert("Maaf, pilihan Anda tidak tersedia");
+        }
+    let jumlahbeli = prompt("Masukkan Jumlah beli");
+    let nama = prompt("Masukkan nama Pemesan");
+    let konfirmasi = prompt("Apakah Anda Seorang member? (y/n)");
+    
+
+
+    if (konfirmasi == "y") {
+        member = true;
+        discount = 0.1 * totalHarga;
+        const hargaAkhir = totalHarga*jumlahbeli - discount;
+        alert(`Hai pelanggan setia ${nama} Total harga yang harus kamu bayar adalah Rp ${hargaAkhir}`);
+    } else if (konfirmasi == "n") {
+        member = false;
+        discount = 0 * totalHarga;
+        const hargaAkhir = totalHarga*jumlahbeli - discount;
+        alert(`Hai ${nama} Total harga yang harus kamu bayar adalah Rp ${hargaAkhir}`);
+    } else{
+        alert("Maaf Masukkan Anda Salah!")
+    }
+
+    // let belilagi = prompt("apakah anda iingin membeli lagi? (yaa/tidak) ")
+    
+
+    alert("Terimakasih, Selamat Menjalankan Aktivitas:)")
+
+    
+     </script>
+</body>
+</html>

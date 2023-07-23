@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiconditional Statement</title>
+  <script>
+    function calculateGrade() {
+      var inputNilai = document.getElementById("nilai").value;
+      
+      // Menggunakan Multiconditional Statement untuk menentukan grade
+      var grade;
+      if (inputNilai >= 90) {
+        grade = "A";
+      } else if (inputNilai >= 80) {
+        grade = "B";
+      } else if (inputNilai >= 70) {
+        grade = "C";
+      } else if (inputNilai >= 60) {
+        grade = "D";
+      } else {
+        grade = "E";
+      }
+      
+      // Menampilkan grade di elemen dengan id "hasil"
+      document.getElementById("hasil").innerHTML = "Grade: " + grade;
+    }
+  </script>
+</head>
+<body>
+  <h1>Grade Calculator</h1>
+  <label for="nilai">Masukkan nilai:</label>
+  <input type="number" id="nilai">
+  <button onclick="calculateGrade()">Hitung</button>
+  <p id="hasil"></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kondisi Boolean</title>
+  <script>
+    // Fungsi untuk menampilkan kondisi boolean
+    function tampilkanKondisi() {
+      var kondisi = document.getElementById("kondisi").checked;
+      var pesan;
+      if (kondisi) {
+        pesan = "Kondisi: Benar";
+      } else {
+        pesan = "Kondisi: Salah";
+      }
+      document.getElementById("hasil").innerHTML = pesan;
+    }
+  </script>
+</head>
+<body>
+  <h1>Kondisi Boolean</h1>
+  <label for="kondisi">Kondisi:</label>
+  <input type="checkbox" id="kondisi" onchange="tampilkanKondisi()">
+  <p id="hasil"></p>
+</body>
+</html>

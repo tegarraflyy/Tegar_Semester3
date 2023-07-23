@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Teman Saya</title>
+  </head>
+  <body>
+    <h1>Nama Mahasiswa</h1>
+    <ul id="data-mahasiswa"></ul>
+
+    <script>
+      // buat array data mahasiswa
+      var mahasiswa = [
+        { nama: "Lutfi", usia: 21, jurusan: "Rekayasa Perangkat Lunak" },
+        { nama: "Raiyan", usia: 19, jurusan: "Administrasi Bisnis" },
+        { nama: "Tegar", usia: 19, jurusan: "Pertanian" },
+        { nama: "Attabik", usia: 22, jurusan: "IT" },
+      ];
+
+      // tampilkan data mahasiswa menggunakan perulangan
+      var daftarMahasiswa = document.getElementById("data-mahasiswa");
+      for (var i = 0; i < mahasiswa.length; i++) {
+        var li = document.createElement("li");
+        li.innerHTML =
+          "Nama: " +
+          mahasiswa[i].nama +
+          ", Usia: " +
+          mahasiswa[i].usia +
+          ", Jurusan: " +
+          mahasiswa[i].jurusan;
+        daftarMahasiswa.appendChild(li);
+      }
+    </script>
+  </body>
+</html>

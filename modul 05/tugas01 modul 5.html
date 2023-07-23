@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>contoh program dengan switch</title>
+</head>
+<body>
+  <h1>Masukkan Nilai (1-5)</h1>
+  <input type="text" id="inputNilai">
+  <button onclick="cekNilai()">Cek</button>
+
+  <script>
+    function cekNilai() {
+      // Mendapatkan nilai dari input
+      var inputNilai = document.getElementById("inputNilai").value;
+
+      // Mengubah nilai menjadi bilangan bulat
+      var nilai = parseInt(inputNilai);
+
+      // Menggunakan pernyataan switch untuk pengkondisian
+      switch (nilai) {
+        case 1:
+          alert("Nilai yang dimasukkan adalah 1");
+          break;
+        case 2:
+          alert("Nilai yang dimasukkan adalah 2");
+          break;
+        case 3:
+          alert("Nilai yang dimasukkan adalah 3");
+          break;
+        case 4:
+          alert("Nilai yang dimasukkan adalah 4");
+          break;
+        case 5:
+          alert("Nilai yang dimasukkan adalah 5");
+          break;
+        default:
+          alert("Nilai yang dimasukkan tidak valid");
+          break;
+      }
+    }
+  </script>
+</body>
+</html>

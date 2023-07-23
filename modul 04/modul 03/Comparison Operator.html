@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comparison Operator</title>
+  <script>
+    
+    function tampilkanHasil() {
+      var a = 10;
+      var b = 5;
+      var c = "5";
+      var d = 10;
+
+      var hasil1 = a == b;
+      var hasil2 = a === c;
+      var hasil3 = a != b;
+      var hasil4 = a !== c;
+      var hasil5 = a > b;
+      var hasil6 = a >= d;
+      var hasil7 = a < b;
+      var hasil8 = a <= d;
+
+      var pesan = "a = " + a + "<br>";
+      pesan += "b = " + b + "<br>";
+      pesan += "c = " + c + "<br>";
+      pesan += "d = " + d + "<br>";
+      pesan += "Equal (==): " + hasil1 + "<br>";
+      pesan += "Strict Equal (===): " + hasil2 + "<br>";
+      pesan += "Not Equal (!=): " + hasil3 + "<br>";
+      pesan += "Strict Not Equal (!==): " + hasil4 + "<br>";
+      pesan += "Greater Than (>): " + hasil5 + "<br>";
+      pesan += "Greater Than or Equal To (>=): " + hasil6 + "<br>";
+      pesan += "Less Than (<): " + hasil7 + "<br>";
+      pesan += "Less Than or Equal To (<=): " + hasil8 + "<br>";
+
+      document.getElementById("hasil").innerHTML = pesan;
+    }
+  </script>
+</head>
+<body>
+  <h1>Comparison Operator</h1>
+  <button onclick="tampilkanHasil()">Klik untuk Menampilkan Hasil</button>
+  <p id="hasil"></p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Switch Style</title>
+    </head>
+    <body>
+        <h1>Masukan Nilai (1-5)</h1>
+        <input type="text" id="InputNilai">
+        <button onclick="cekNilai()">cek</button>
+
+        <script>
+            function cekNilai() {
+                var InputNilai = document.getElementById("InputNilai").value;
+                var nilai = parseInt(InputNilai);
+
+                switch (nilai) {
+                    case 1:
+                        alert("Nilai yang dimasukan adalah 1");
+                        break;
+                    case 2:
+                        alert("Nilai yang dimasukan adalah 2");
+                        break;
+                    case 3:
+                        alert("Nilai yang dimasukan adalah 3");
+                        break;
+                    case 4:
+                        alert("Nilai yang dimasukan adalah 4");
+                        break;
+                    case 5:
+                        alert("Nilai yang dimasukan adalah 5");
+                    default:
+                        alert("Nilai yang dimasukan tidak valid");
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>

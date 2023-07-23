@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ternary Operator</title>
+  <script>
+    function checkNumber() {
+      // Mendapatkan nilai input dari elemen dengan id "angka"
+      var inputAngka = document.getElementById("angka").value;
+      
+      // Mengevaluasi apakah angka tersebut positif atau negatif menggunakan Ternary Operator
+      var hasil = (inputAngka >= 0) ? "Positif" : "Negatif";
+      
+      // Menampilkan hasil di elemen dengan id "hasil"
+      document.getElementById("hasil").innerHTML = "Angka tersebut adalah " + hasil;
+    }
+  </script>
+</head>
+<body>
+  <h1>Ternary Operator</h1>
+  <label for="angka">Masukkan angka:</label>
+  <input type="number" id="angka">
+  <button onclick="checkNumber()">Cek</button>
+  <p id="hasil"></p>
+</body>
+</html>

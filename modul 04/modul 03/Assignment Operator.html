@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment Operator</title>
+  <script>
+    
+    function tampilkanHasil() {
+      var a = 20.5;
+      var b = 7;
+      var c = 35;
+      var hasilPenjumlahan = a + b;
+      var hasilPengurangan = a - b;
+      var hasilPerkalian = a * b;
+      var hasilPembagian = a / b;
+      var hasilModulus = c % b;
+
+      var pesan = "a = " + a + "<br>";
+      pesan += "b = " + b + "<br>";
+      pesan += "c = " + c + "<br>";
+      pesan += "Penjumlahan: " + hasilPenjumlahan + "<br>";
+      pesan += "Pengurangan: " + hasilPengurangan + "<br>";
+      pesan += "Perkalian: " + hasilPerkalian + "<br>";
+      pesan += "Pembagian: " + hasilPembagian + "<br>";
+      pesan += "Modulus: " + hasilModulus + "<br>";
+
+      document.getElementById("hasil").innerHTML = pesan;
+    }
+  </script>
+</head>
+<body>
+  <h1>Operasi Aritmatika</h1>
+  <button onclick="tampilkanHasil()">Klik untuk Menampilkan Hasil</button>
+  <p id="hasil"></p>
+</body>
+</html>
